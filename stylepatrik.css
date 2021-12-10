@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+*{
+  text-decoration: none;
+}
+html {
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+}
+
+nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  margin-left: -37%;
+  font-weight: bold;
+  height: 80px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+label.logo {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover {
+  background: #430453;
+  transition: .5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+#navhead {
+    color: #110413;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(33, 13, 41);
+  height: 100vh;
+  width: 100vw;
+}
+
+span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  color:blueviolet;
+  font-size: 124px;
+  letter-spacing: 8px;
+  cursor: pointer;
+}
+
+span::before {
+  content: "Patrik";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+span::after {
+  content: "Patrik";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+span:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+span:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
